@@ -1,82 +1,70 @@
-🚀 Java Projects Repository
+# Expense Tracker
 
-<p align="center"> <img src="https://img.shields.io/badge/Language-Java-blue.svg" /> <img src="https://img.shields.io/badge/Focus-OOP%20%7C%20Clean%20Code-green.svg" /> <img src="https://img.shields.io/badge/Projects-4-orange.svg" /> <img src="https://img.shields.io/badge/Status-Active-success.svg" /> </p>
-📌 Overview
+A simple Java command-line application to help users manage and track their daily expenses. The application allows the user to add new expenses, view existing expenses, and calculate the total expenses. All functionalities are handled within a single `Main.java` file for simplicity.
 
-This repository showcases a collection of Java-based applications developed to demonstrate strong programming fundamentals, object-oriented design, and practical problem-solving skills.
+## Features
 
-Each project is built with a focus on:
+- **Add Expense**: Allows users to input a description and amount for an expense.
+- **View Expenses**: Displays all recorded expenses in a list.
+- **Show Total Expenses**: Calculates and displays the total sum of all expenses recorded.
+- **Exit**: Exits the program safely.
 
-✔️ Clean and maintainable code
-✔️ Modular architecture
-✔️ Real-world use cases
-📂 Projects
-🔢 1. Simple Calculator
-Type: GUI Application (Swing)
-Description: A user-friendly calculator supporting basic arithmetic operations.
-Highlights:
-Event-driven programming
-Java Swing components (JFrame, JTextField)
+## How It Works
 
-👉 View Project
+1. **Main Menu**: When the program starts, it shows a menu with options:
+   - Add an expense
+   - View all expenses
+   - Show total expenses
+   - Exit the application
 
-❌⭕ 2. Tic-Tac-Toe Game
-Type: Console Application
-Description: A two-player interactive game with win-condition logic.
-Highlights:
-Game logic implementation
-Arrays & control flow
+2. **Add Expense**: Users can enter a description (e.g., "Lunch") and an amount (e.g., 10.50). The expense is then recorded in a list.
 
-👉 View Project
+3. **View Expenses**: All previously recorded expenses are displayed in the format: 
+   ```plaintext
+   Description: $amount
+4. **Show Total Expenses**: The total sum of all recorded expenses is calculated and displayed.
 
-💰 3. Expense Tracker
-Type: Console Application
-Description: Tracks and manages daily expenses with total calculations.
-Highlights:
-Dynamic data handling using ArrayList
-CLI interaction
+5. **Exit**: Exits the program.
 
-👉 View Project
+  ## Code Overview
+The application is composed of the following parts:
 
-📚 4. Library Management System
-Type: Console Application
-Description: Simulates a real-world library system with book and user management.
-Highlights:
-Multi-class OOP design
-Real-world system modeling
+### **Main.java**:
+Contains the entire program logic, including:
+The menu-driven interface.
+Methods to add, view, and calculate expenses.
+Expense entries are stored in an ArrayList.
 
-👉 View Project
+### **Expense Class**:
+This is defined inside the Main.java file as a simple class to store an expense's description and amount.
 
-🎯 Key Skills Demonstrated
-Object-Oriented Programming (OOP)
-Data Structures & Algorithms (Basics)
-GUI Development with Swing
-Clean Code & Modular Design
-Problem Solving with Java
-🛠️ Tech Stack
-Java SE
-Swing (GUI)
-Java Collections Framework
-▶️ Getting Started
-# Clone the repository
-git clone https://github.com/your-username/java-projects-repo.git
+## Example Output
+Expense Tracker
+1. Add Expense
+2. View Expenses
+3. Show Total Expenses
+4. Exit
+Enter Your Choice: 1
+Enter Expense description: Coffee
+Enter Expense amount: 5.50
+Expense added successfully.
 
-# Navigate into a project
-cd SimpleCalculator
+Expense Tracker
+1. Add Expense
+2. View Expenses
+3. Show Total Expenses
+4. Exit
+Enter Your Choice: 2
+List of Expenses:
+Coffee: $5.50
 
-# Compile & Run
-javac Main.java
-java Main
-🔮 Future Improvements
-Add database integration (JDBC / MySQL)
-Introduce file handling & persistence
-Upgrade console apps to GUI-based systems
-Implement advanced concepts (Multithreading, APIs)
-🤝 Contributions
+Expense Tracker
+1. Add Expense
+2. View Expenses
+3. Show Total Expenses
+4. Exit
+Enter Your Choice: 3
+Total Expenses: $5.50
 
-Contributions, suggestions, and feedback are welcome!
-Feel free to fork this repository and enhance it further.
-
-⭐ Support
-
-If you found this repository useful, consider giving it a ⭐ to support the project!
+## License
+This project is open-source and available under the MIT License.
